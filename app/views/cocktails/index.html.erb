@@ -1,0 +1,19 @@
+<h1>All cocktails</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Name</strong></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cocktails.each do |cocktail| %>
+      <tr>
+        <td><%= cocktail.name %></td>
+        <td><%= link_to 'Show', cocktail %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
