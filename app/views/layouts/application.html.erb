@@ -13,8 +13,19 @@
   </head>
 
   <body>
-    <div style="margin: 30px auto; width: 60%">
-    <%= yield %>
+
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+      <%= link_to cocktails_path, class: "navbar-brand" do %>
+        <%= image_tag "logo_neon" %>
+      <% end %>
+
+      <div class="collapse navbar-collapse">
+
+      </div>
+    </div>
+
+    <div>
+      <%= yield %>
     </div>
 
     <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->

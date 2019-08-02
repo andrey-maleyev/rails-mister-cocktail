@@ -1,0 +1,25 @@
+<%= simple_form_for(dose) do |form| %>
+  <% if dose.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(dose.errors.count, "error") %> prohibited this dose from being saved:</h2>
+
+      <ul>
+      <% dose.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.input :description, label: "Dose description:" %>
+  </div>
+
+<!--   <div class="field">
+    <%= form.association :ingredient_id, label: "Ingredients:" %>
+  </div> -->
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
