@@ -1,17 +1,17 @@
-<div class="banner" style="background-image: url(assets/banner)">
+<div class="banner" style="background-image: url('https://res.cloudinary.com/dev42/image/upload/v1564727285/beverager.pro/fnkvkpbxalsriocmydkz.jpg')">
+
   <div class="container">
-<!--         <h1>Le Wagon brings <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
-    <p>Change your life and learn to code at one of our campuses around the world.</p>
-    <a class="btn btn-flat" href="#">Apply now</a> -->
-    <p><%= link_to 'Add new cocktail', new_cocktail_path, class: "btn btn-danger" %></p>
+    <h1>Bring bright colors into your life!</h1>
+    <h3>Choose a cocktail to your taste!</h3>
+    <p><%= link_to 'Add a new cocktail', new_cocktail_path, class: "btn btn-danger" %></p>
   </div>
 </div>
 
-
-
 <div class="cards main">
     <% @cocktails.each do |cocktail| %>
-      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+      <div class="card-category"
+        style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),
+               url('<%= cl_image_path cocktail.photo, crop: :fill %>')">
         <%= link_to cocktail.name, cocktail, class: "text-white" %>
       </div>
     <% end %>
