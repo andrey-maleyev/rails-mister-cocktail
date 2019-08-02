@@ -20,30 +20,30 @@ Dose.delete_all
 Cocktail.delete_all
 Ingredient.delete_all
 
-# url = "https://res.cloudinary.com/dev42/image/upload/v1564726389/beverager.pro/wrfir9vwkeln1xz5wokx.jpg"
-# cocktail = Cocktail.new(name: 'Mojito')
-# cocktail.remote_photo_url = url
-# cocktail.save
+url = "https://res.cloudinary.com/dev42/image/upload/v1564726389/beverager.pro/wrfir9vwkeln1xz5wokx.jpg"
+cocktail = Cocktail.new(name: 'Mojito')
+cocktail.remote_photo_url = url
+cocktail.save
 
-# url = "https://res.cloudinary.com/dev42/image/upload/v1564726424/beverager.pro/frhmwfgpjdvopru22hkm.jpg"
-# cocktail = Cocktail.new(name: 'Long Island Tea')
-# cocktail.remote_photo_url = url
-# cocktail.save
+url = "https://res.cloudinary.com/dev42/image/upload/v1564726424/beverager.pro/frhmwfgpjdvopru22hkm.jpg"
+cocktail = Cocktail.new(name: 'Long Island Tea')
+cocktail.remote_photo_url = url
+cocktail.save
 
-# url = "https://res.cloudinary.com/dev42/image/upload/v1564726445/beverager.pro/f11dfme4txezlhx9q1ng.jpg"
-# cocktail = Cocktail.new(name: 'Margarita')
-# cocktail.remote_photo_url = url
-# cocktail.save
+url = "https://res.cloudinary.com/dev42/image/upload/v1564726445/beverager.pro/f11dfme4txezlhx9q1ng.jpg"
+cocktail = Cocktail.new(name: 'Margarita')
+cocktail.remote_photo_url = url
+cocktail.save
 
-# url = "https://res.cloudinary.com/dev42/image/upload/v1564726550/beverager.pro/kjmjm9s6bbe3qnfs7peq.jpg"
-# cocktail = Cocktail.new(name: 'Daiquiri')
-# cocktail.remote_photo_url = url
-# cocktail.save
+url = "https://res.cloudinary.com/dev42/image/upload/v1564726550/beverager.pro/kjmjm9s6bbe3qnfs7peq.jpg"
+cocktail = Cocktail.new(name: 'Daiquiri')
+cocktail.remote_photo_url = url
+cocktail.save
 
-# url = "https://res.cloudinary.com/dev42/image/upload/v1564726533/beverager.pro/rrgq1jbqpbpgrdnukwus.jpg"
-# cocktail = Cocktail.new(name: 'Moscow Mule')
-# cocktail.remote_photo_url = url
-# cocktail.save
+url = "https://res.cloudinary.com/dev42/image/upload/v1564726533/beverager.pro/rrgq1jbqpbpgrdnukwus.jpg"
+cocktail = Cocktail.new(name: 'Moscow Mule')
+cocktail.remote_photo_url = url
+cocktail.save
 
 open("https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list") do |ingredients|
   ingredients.read.each_line do |ingredient|
