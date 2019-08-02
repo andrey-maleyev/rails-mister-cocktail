@@ -15,10 +15,15 @@
   <body>
     <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
 
+      <%= link_to cocktails_path, class: "navbar-brand" do %>
+        <img src="assets/logo_neon" />
+      <% end %>
+
       <div class="collapse navbar-collapse">
 
       </div>
     </div>
+
 
     <div>
       <%= yield %>
