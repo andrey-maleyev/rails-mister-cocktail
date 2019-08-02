@@ -5,11 +5,11 @@
 	<%= simple_form_for([@cocktail, @dose]) do |form| %>
 
 	  <div class="field">
-	    <%= form.input :description, label: "Dose description:" %>
+	    <%= form.association :ingredient, label: "Ingredients:" %>
 	  </div>
 
 	  <div class="field">
-	    <%= form.association :ingredient, label: "Ingredients:" %>
+	    <%= form.input :description, label: "Dose description:" %>
 	  </div>
 
 	  <div class="actions">
